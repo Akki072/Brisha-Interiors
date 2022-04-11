@@ -3,21 +3,19 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  padding:0;
-  margin:0;
 }
-/* Title */
-.bottom-section-border{
-  border-bottom: 1px solid black;
+
+/* <---------------------------------------------------------- LOGO */
+.logo-nav{
+  border-radius: 600px;
+  width: 80px;
 }
-/* Navbar */
+
+/* <---------------------------------------------------------- NAV */
 .navigation{
   background-color: #FFEDDB;
   height:20vh;
   padding:2rem;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
   color:black;
 }
 .brand-title{
@@ -25,9 +23,6 @@ body{
   color:black;
 }
 .toggle-class {
-    position: absolute;
-    top: 2.40rem;
-    right: 1.75rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -44,35 +39,27 @@ body{
     border-radius: 10px;
 }
 .navigation-items ul{
-  display:flex;
   list-style:none;
   font-size:1.8rem;
   margin: 0 0.5rem;
-  padding:0;
 }
 .navigation ul li{
-  margin: 0;
-  padding:0;
   padding:1.5rem;
-  transition: 0.2s;
 }
 .navigation ul li:hover{
   background-color: rgba(0,0,0,0.5);
-  color:white ;
   border-radius: 0.8rem;
 }
 .navigation-links{
-  display:block;
-  text-decoration:none;
   color:black;
-  font-weight: bold;
 }
 .navigation-links:hover{
   color:white;
 }
+
+/* <---------------------------------------------------------- TITLE */
 #title{
-  height:100vh;
-  background-color:#FFEDDB;
+  height:100vh
 }
 .title{
   background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url(images/hero.jpg);
@@ -84,15 +71,11 @@ body{
   font-size: 7.5vw;
   font-weight: 500;
   font-family: 'Playfair Display', serif;
-  line-height: 1.25;
-  width:50%;
-  margin:auto;
-  text-align:center;
-  color: white;
 }
+
+/* <---------------------------------------------------------- ABOUT US */
 #about-us{
   background-color: #2C3333;
-  color: white;
 }
 .about-us-title{
   font-weight: 600;
@@ -100,7 +83,11 @@ body{
 .about-us-text{
   line-height: 2;
 }
+.carousel{
+  margin: auto 0;
+}
 
+/* <---------------------------------------------------------- PROJECTS */
 #projects{
   background-color:#FFEDDB;
   color:#2C3333;
@@ -121,22 +108,32 @@ body{
   font-size: 3rem;
   font-weight: bolder;
 }
-#map{
-  letter-spacing: 0.15rem;
+
+/* <---------------------------------------------------------- CONTACT*/
+#contact{
+  background-color: #2C3333;
+  padding:0.5rem;
+  letter-spacing:0.1rem;
 }
 
-/* footer */
+/* <---------------------------------------------------------- FOOTER */
 #footer{
   background-color:#FFEDDB;
   text-align: center;
   font-size: 3rem;
-
+}
+.social-media a{
+  text-decoration: none;
+  margin:5%;
+  color:#873E01;
 }
 
+/* <---------------------------------------------------------- MEDIA QUERIES */
 @media (max-width:610px) {
   .navigation{
-    flex-flow:column;
-    align-items:flex-start;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
     height:15vh;
     padding:1.5rem;
   }
@@ -167,8 +164,7 @@ body{
     height:50vh;
   }
   .title{
-    height:34vh;
-    text-align:center;
+    height:35vh;
   }
   .title-text{
     font-size: 3rem;
@@ -188,31 +184,4 @@ body{
   #footer a{
     margin: 0 16px;
   }
-}
-
-/* About us*/
-.carousel{
-  margin: auto 0;
-}
-
-.social-media a{
-  text-decoration: none;
-  margin:5%;
-  color:#873E01;
-}
-/* Logo */
-.logo-nav{
-  border-radius: 600px;
-  width: 80px;
-
-}
-.email{
-  color:white
-}
-
-
-
-#map{
-  background-color:  #2C3333;
-  color: #F5F2E7;
 }
