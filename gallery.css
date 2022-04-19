@@ -25,10 +25,9 @@
   padding:2rem;
 }
 .gallery-item{
-  height:25vh;
+  height:45vh;
   flex-grow:1;
   padding:0.5rem;
-  widdth:35%;
 }
 .gallery-item img{
   height:100%;
@@ -39,9 +38,13 @@
 .gallery-item img:hover{
   box-shadow: 3px 0 10px grey, 0 3px 10px grey,-3px 0 10px grey,0 -3px 10px grey
 }
-@media (max-width:600px){
+@media (max-width:820px){
   .gallery{
     width:90%;
+  }
+  .gallery-item{
+    height:25vh;
+    width:35%;
   }
 
 }
