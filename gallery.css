@@ -21,7 +21,7 @@
   width:100%;
   color:#e3e0d1;
   text-align: center;
-  font-size: 5rem;
+  font-size:8rem;
   padding:2rem;
 }
 .gallery-item{
@@ -45,6 +45,9 @@
   .gallery-item{
     height:25vh;
     width:35%;
+  }
+  .gallery-title{
+    font-size: 20vw;
   }
 
 }
